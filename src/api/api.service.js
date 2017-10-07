@@ -53,7 +53,6 @@ class OSMAPI {
      * @return {Promise} the adapter response
     */
     xhr(options) {
-        let deferred = this.$q.defer();
         return this._oauth.xhr(options);
     }
 
